@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Matrices</title>
+	<style type="text/css">
+		
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color:   #2dd9f8  ;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+         a {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+            border-radius: 0 0 8px 8px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        a:hover {
+            background-color: #e0e0e0;
+        }
+
+
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .texto {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+        }
+        .texto img{
+
+        	width: 100%;
+
+
+
+
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+        .xd {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+
+    </style>
+    <style>
+        .xs {
+            width: 29%;
+            margin: 1.5%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .xs:hover {
+            transform: scale(1.05);
+
+	</style>
+</head>
+<body>
+	
+	 <header>
+        <h1>Matrices</h1>
+    </header>
+
+    <section>
+        <div class="texto">
+            <h2>Definición</h2>
+            <p>Una matriz es una tabla bidimensional de números o datos organizados en filas y columnas. Cada uno de estos datos se llama elemento de la matriz y se identifica mediante su posición, especificada por dos subíndices: el primero indica la fila y el segundo la columna. Por ejemplo, el elemento ubicado en la fila i y la columna j de una matriz A se denota como aij. 
+                Las matrices pueden ser cuadradas, cuando tienen el mismo número de filas y columnas, o rectangulares, si tienen diferente cantidad de filas y columnas. Si una matriz tiene m filas y n columnas, se denomina matriz m por n.
+               <p> Las matrices tienen múltiples aplicaciones en álgebra y otras disciplinas. Se utilizan para representar sistemas de ecuaciones lineales, organizar datos que dependen de varios parámetros y realizar operaciones como suma, multiplicación y descomposición. También son esenciales en la teoría de matrices, un campo que estudia sus propiedades y métodos para simplificarlas o transformarlas.
+                <p>El orden de las filas y columnas, así como las operaciones definidas sobre las matrices, son fundamentales para su manejo y para resolver problemas relacionados con datos y sistemas matemáticos. </p>
+                <img src="./img/mtr.jpg">
+            <center> <ul class= "xd"><li class="xs"><a href="https://www.uv.mx/personal/aherrera/files/2014/08/11d.-ALGEBRA-DE-MATRICES-4.pdf"  target="_blank">OBTENER MÁS INFORMACIÓN</a></li></ul>
+            </center>
+        </div>
+
+        <div class="texto">
+            <h2>Tipos de Matrices</h2>
+            <p>Se llama matriz nula a la que tiene todos los elementos cero, Por ejemplo:</p>
+            <center><img src="./img/mt1.png"style="width: 200px; height: auto;"></center>
+            <p>Se llama matriz fila a la que sólo tiene una fila, es decir su dimensión es (1xn). Por ejemplo:</p>
+           <center><img src="./img/mt2.png"style="width: 200px; height: auto;"></center>
+            <p>Se llama matriz columna a la que sólo consta de una columna, es decir su dimensión será (mx1), como por ejemplo:</p>
+            <center><img src="./img/mt3.png"style="width: 100px; height: auto;"></center>
+            <p>Una matriz es cuadrada cuando tiene el mismo número de filas que de columnas, es decir su dimensión es (nxn)</p>
+            <center><img src="./img/mt4.png"style="width: 100px; height: auto;"></center>
+           <p>Se llama matriz columna a la que sólo consta de una columna, es decir su dimensión será (mx1), como por ejemplo:</p>
+             <center><img src="./img/mt3.png"style="width: 100px; height: auto;"></center>
+            <p>Una matriz es cuadrada cuando tiene el mismo número de filas que de columnas, es decir su dimensión es (nxn)</p>
+             <center><img src="./img/mt4.png"style="width: 100px; height: auto;"></center>
+            <p>Una matriz es rectangular si no es cuadrada, es decir, tiene diferente número de filas que de columnas;ejemplo:</p>
+             <center><img src="./img/mt5.png"style="width: 200px; height: auto;"></center>
+            <center><ul class= "xd"><li class="xs"><a href="https://www.uv.mx/personal/aherrera/files/2014/08/11d.-ALGEBRA-DE-MATRICES-4.pdf">OBTENER MÁS INFORMACIÓN</a></li></ul>
+            </center>
+             </div>
+</section>
+
+<section>
+             <div class="texto">
+             	
+            <h2>Determinantes y sus Propiedades</h2>
+            <p>Los determinantes tienen diversas aplicaciones en el álgebra lineal, entre las cuales destacan:</p>
+            <h3>Resolución de sistemas de ecuaciones:</h3> 
+            <p>Los determinantes permiten resolver sistemas de ecuaciones lineales mediante métodos como la regla de Cramer.</p>
+            <h3>Invertibilidad de matrices:</h3>
+            <p>Una matriz es invertible si y solo si su determinante es diferente de cero. Si el determinante de una matriz M es igual a cero, entonces M no tiene inversa.
+             <h3>Dependencia lineal de vectores:</h3>
+            Los determinantes se utilizan para determinar si un conjunto de n vectores es linealmente dependiente o independiente. Si el determinante de la matriz formada por estos vectores es cero, los vectores son linealmente dependientes.
+            <center><img src="./img/mtr1.png"style="width: 300px; height: auto;"></center>
+            <center><ul class= "xd"><li class="xs"><a href="https://www.youtube.com/watch?v=8OnOZvc5rFQ" target="_blank">OBTENER MÁS INFORMACIÓN</a></li></ul>
+            </center></div>
+    
+        </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 proyecto  KKAAA | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

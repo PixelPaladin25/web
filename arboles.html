@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Árboles</title>
+	<style type="text/css">
+		
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color:   #26b063  ;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+         a {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+            border-radius: 0 0 8px 8px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        a:hover {
+            background-color: #e0e0e0;
+        }
+
+
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .texto {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+        }
+        .texto img{
+
+        	width: 100%;
+
+
+
+
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+        .xd {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+
+    </style>
+    <style>
+        .xs {
+            width: 29%;
+            margin: 1.5%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .xs:hover {
+            transform: scale(1.05);
+
+	</style>
+</head>
+<body>
+	
+	 <header>
+        <h1>Árbol</h1>
+    </header>
+
+    <section>
+        <div class="texto">
+            <h2>Definición</h2>
+            <p>Un árbol es una estructura no lineal formada por un conjunto de nodos y un conjunto de ramas.
+            En un árbol existe un nodo especial denominado raíz. Así mismo, un nodo del que sale alguna rama, recibe el nombre de nodo de bifurcación o nodo rama y un nodo que no tiene ramas recibe el nombre de nodo hoja. A continuación se aprecia en la siguiente figura:</p>
+            <img src="./img/arbol.png">
+            <p>Como se aprecia en la figura cada nodo de un árbol es la raíz de algún subárbol contenido en él. El número de ramas de un nodo recibe el nombre de grado del nodo.
+            <p> El nivel de un nodo respecto al nodo raíz se define diciendo que la raíz tiene el nivel 0 y cualquier otro nodo tiene un nivel igual a la distancia de ese nodo al nodo raíz. El máximo de los niveles se denomina altura del árbol.
+            <p>Es útil limitar los árboles en el sentido de que cada nodo sea a lo sumo de grado 2. De esta forma cabe distinguir entre subárbol izquierdo y subárbol derecho de un nodo. Los árboles así formados, se llaman árboles binarios.</p>
+             <
+            <center> <ul class= "xd"><li class="xs"><a href="https://aniei.org.mx/paginas/uam/CursoPoo/curso_poo_12.html" target="_blank">OBTENER MÁS INFORMACIÓN</a></li></ul>
+            </center>
+        </div>
+        <div class="texto">
+            <h2>Árbol binario</h2>
+              <p>Un árbol binario está compuesto por nodos, que tienen las siguientes propiedades:</p>
+             <li><b>Hijo izquierdo</b>:Cada nodo puede tener un hijo izquierdo, que es otro nodo.</li>
+               <li><b>Hijo derecho:</b>:Cada nodo puede tener un hijo derecho, que es otro nodo.</li>
+            </ol>
+            <p>Un árbol binario es un conjunto finito de nodos que consta de un nodo raíz que tiene dos subárboles binarios denominados subárbol izquierdo y subárbol derecho.El árbol binario es una estructura de datos muy útil cuando el tamaño de la estructura no se conoce, se necesita acceder a sus elementos ordenadamente.
+            <p>En sí un árbol binario es una colección de objetos, cada uno de los cuales contiene datos o una referncia a su subárbol derecho.Básicamente se pueden utilizar tres formas para recorrer un árbol binario, preorden, inorden, postorden.</p>
+                <img src="./img/ARB2.png">
+            <li><b>Preorden:</b>:R,I,D</li>
+            <li><b>Inorden</b>: I,R,D</li>
+            <li><b>Postorden:</b>:I,D,R</li>
+            <p>En el orden preorden se recorre de la siguiente manera: raíz, subárbol izquierdo, subárbol derecho.
+            <p>En el orden inorden se recorre de la siguiente manera: subárbol izquierdo, raíz, subárbol derecho.
+            <p>En el orden postorden se recorre de la siguiente manera: subárbol izquierdo, subárbol derecho, raíz.
+            <p>La definición de la clase árbol binario, analizando lo expuesto anteriormente de una variable que simboliza la raíz del árbol y cada nodo del árbol será un objeto de la clase<p>
+                <center> <ul class= "xd"><li class="xs"><a href="https://aniei.org.mx/paginas/uam/CursoPoo/curso_poo_12.html" target="_blank">OBTENER MÁS INFORMACIÓN</a></li></ul>
+            </center></div>
+
+</section>
+
+<section>        
+            <div class="texto">
+            <h2>Recorrido de un árbol: Preorden, Inorden, Postorden</h2>
+            <li><b>Preorden</b>:El recorrido en preorden es un método para recorrer un árbol binario en el que se visita primero el nodo raíz, luego se recorre el subárbol izquierdo y, finalmente, el subárbol derecho. Este recorrido se realiza de manera recursiva, comenzando desde el nodo raíz y procesando cada nodo antes de explorar sus subárboles.</li>
+            <li><b>Inorden</b>:El recorrido en inorden o simétrico es un método para recorrer un árbol binario en el que se procesa primero el subárbol izquierdo, luego el nodo raíz y, finalmente, el subárbol derecho. Este recorrido se realiza de manera recursiva, asegurando que los nodos se visiten en un orden lógico que resulta útil, por ejemplo, para obtener los elementos de un árbol binario de búsqueda en orden ascendente.</li>
+            <li><b>Postorden</b>:El recorrido en postorden es un método para recorrer un árbol binario en el que se procesa primero el subárbol izquierdo, luego el subárbol derecho y, finalmente, el nodo raíz. Este recorrido se realiza de manera recursiva y es especialmente útil en aplicaciones donde se necesita procesar los hijos de un nodo antes que el propio nodo, como en evaluaciones de expresiones o eliminación de estructuras jerárquicas.</li>
+              <center> <img src="./img/rec.png"style="width: 300px; height: auto;"></center>
+            <center> <ul class= "xd"><li class="xs"><a href="https://gc.scalahed.com/syllabus/cloud/visor.php?container=L1IS104_1035_615_35451_0&object=Recorrido_arbol.pdf" target="_blank">OBTENER MÁS INFORMACIÓN</a></li></ul></center>
+             </div>
+        </section>
+
+    <footer>
+        <p>&copy; 2025 proyecto  KKAAA | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

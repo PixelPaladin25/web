@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Álgebra Booleanas</title>
+	<style type="text/css">
+		
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffe6ff;
+            color: #333;
+        }
+
+        header {
+            background-color:   #ffb3ff  ;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+         a {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+            border-radius: 0 0 8px 8px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        a:hover {
+            background-color: #e0e0e0;
+        }
+
+
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .texto {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+        }
+        .texto img{
+
+        	width: 100%;
+
+
+
+
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+        .xd {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+
+    </style>
+    <style>
+        .xs {
+            width: 29%;
+            margin: 1.5%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .xs:hover {
+            transform: scale(1.05);
+
+	</style>
+</head>
+<body>
+	
+	 <header>
+        <h1>Algebra Booleanas</h1>
+    </header>
+
+    <section>
+        <div class="texto">
+        	<img src="./img/imga.png"> 
+
+            <h2>Definición</h2>
+            <p>El álgebra de Boole está formada por un conjunto de variable booleanas,x ∈ {0,1}.Es decir variables que sólo pueden tomar dos valores:0 ó 1, verdadero o falso, abierto o cerrado, encendido o apagado, etc. </p>
+            <p>Un literal I es un variable o su negada. Existen dos tipos:literales con signo positivo cuando representan el valor "1" de la variable (l=x); y con signo negativo cuabndo representasn el valor "0 "(l=x). </p>
+            <p>Una cláusula (o término C) está formada por un conjunto de literales enlazados mediante conectivas lógicas. </p>
+             <p> Una fórmula lógica ϕ está formada por conjuntos de cláusulas enlazadas mediante conectivas lógicas. Matemáticamente, toda fórmula lógica ϕ de n variables puede verse también como una función multivariable, esto es ϕ: {0, 1}n→{0,1}. En este texto emplearemos indistintamente los términos de función y fórmula. </p>
+             </p>Una interpretación de una fórmula lógica ϕ es el valor lógico de la fórnmula cuando se le asignan valores de verdad (TRUE/FALSE) a sus variables. En consecuencia, exisitirán tantas interpretaciones como combinaciones de asignaciones posibles.
+             </p>mSe dice que una fórmula lógica es satisfacible cuando exoste al menos una interpetacion que la hace verdadera.</p>
+             </p>Una tabla de verdad, o tabvla de valores de verdades, es una tabla que muestra el valor de verdad de una cláusula o fórmula lógica, para cada combinación de verdad que se pueda asignar a sus literales.</p>
+            </ol></br>
+            <center> <ul class= "xd"><li class="xs"><a href="https://bookdown.org/alberto_brunete/intro_automatica/algebraboole.html#definiciones"  target="_blank">OBTENER MÁS INFORMACIÓN</a></li></ul>
+            </center>
+        </div>
+
+        
+             </div>
+</section>
+
+<section>
+             <div class="texto">
+             	<img src="./img/imgc.jpg">
+            <h2>Propiedades de Álgebra Booleanas</h2>
+            <ol>
+            <li><b>ley conmutativa:</b>Otro tipo de identidad matemática, llamada “propiedad” o “ley”, describe cómo diferentes variables se relacionan entre sí en un sistema de números.</li>
+            <li><b>Ley asociativa:</b>Junto con las propiedades conmutativas de suma y multiplicación, tenemos la propiedad asociativa, aplicándose nuevamente igualmente bien a la suma y a la multiplicación.</li>
+            <li><b>ley distributiva:</b>Por último, tenemos la propiedad distributiva, que ilustra cómo expandir una expresión booleana formada por el producto de una suma, y a la inversa nos muestra cómo los términos pueden ser factorizados a partir de las sumas de productos booleanas</li></ol>
+            
+            <center> <ul class= "xd"><li class="xs"><a href="https://espanol.libretexts.org/Vocacional/Tecnologia_Electronica/Libro%3A_Circuitos_Electricos_IV_-_Circuitos_Digitales_(Kuphaldt)/07%3A_%C3%81lgebra_booleana/7.04%3A_Propiedades_algebraicas_booleanas" target="_blank">OBTENER MÁS INFORMACIÓN</a></li></ul>
+            </center></div>
+        <div class="texto">
+            <img src="./img/imgb.jpg">
+            <h2>Compuertas Lógicas</h2>
+            <p>Que son las compuertas lógicas, esperamos que en este breve tutorial se aclarara esta pregunta. En resumen una compuerta lógica es la mínima operación digital que se puede realizar.</p>
+
+            <p>Existen al menos 4 operaciones básicas, la multiplicación lógica (AND), suma lógica (OR), la negación lógica (NOT) y la comparación lógica (XOR). El resto de las operaciones se realizan con las anteriores y sus negaciones. Una compuerta lógica es un conjunto de transistores que realizan dichas operaciones. Estas son los bloques básicos con los que están construidos los sistemas digitales actuales.</p>
+            
+            <center> <ul class= "xd"><li class="xs"><a href="https://hetpro-store.com/TUTORIALES/compuertas-logicas/#:~:text=Existen%20al%20menos%204%20operaciones,transistores%20que%20realizan%20dichas%20operaciones." target="_blank">OBTENER MÁS INFORMACIÓN</a></li></ul>
+            </center></div>
+
+         <div class="texto">
+        	<img src="./img/imgd.jpg">
+            <h2>Leyes de Morgan</h2>
+            <h3>Primera Ley de Morgan</h3>
+            <p>Sostiene que el complemento de un producto de «n» variables será igual que la suma de los complementos de «n» variables.</p>
+
+            <h3>Segunda Ley de Morgan</h3>
+            <p>Sostiene que el complemento de una suma de «n» variables será igual que el producto de los complementos de «n» variables.</p>
+            <h4>¿Dónde se aplican las leyes de Morgan?</h4>
+            <p>Esta compleja teoría resulta de gran utilidad en el entorno tecnológico, como ya te hemos comentado anteriormente. Tiene, eso sí, una importancia ligeramente mayor en un ámbito concreto: el de los autómatas programables.
+            Este sector en auge cada vez está generando más interés debido a los avances tecnológicos y científicos que se están llevando a cabo. Si eres un apasionado de la inteligencia artificial, no te contamos nada nuevo si te decimos que prácticamente todos los días salen a la luz avances nuevos. Así pues, las leyes de Morgan siguen rigiendo el ámbito de la tecnología aplicada a los sistemas automatizados.</p>
+            <center> <ul class= "xd"><li class="xs"><a href="https://www.youtube.com/watch?v=BCL19AKlAsM target="_blank">OBTENER MÁS INFORMACIÓN</a></li></ul>
+            </center>
+        </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 proyecto KKAAA | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

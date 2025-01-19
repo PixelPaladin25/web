@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grafos</title>
+	<style type="text/css">
+		
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color:   #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color:     #f0b43d    ;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+         a {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+            border-radius: 0 0 8px 8px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        a:hover {
+            background-color: #e0e0e0;
+        }
+
+
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .texto {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+        }
+        .texto img{
+
+        	width: 100%;
+
+
+
+
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+        .xd {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+
+    </style>
+    <style>
+        .xs {
+            width: 29%;
+            margin: 1.5%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .xs:hover {
+            transform: scale(1.05);
+
+	</style>
+</head>
+<body>
+	
+	 <header>
+        <h1>Grafos</h1>
+    </header>
+
+    <section>
+        <div class="texto">
+        	<img src="./img/imge.jpg">
+            <h2>¿Qué es un grafo?</h2>
+            <p>Un grafo en su totalidad es un par ordenado compuesto por vértices (v) y aristas (e); donde en la gran mayoría de los casos los vértices son de cuantificación finita. El número de vértices que componen al grafo, son las que conocemos como orden. Existe también el concepto de grado que se corresponde al número de arcos al que pertenecen de forma externa y en cuanto a las aristas también conseguimos el concepto de bucle que no es más que una arista relacionada de diversas formas con el mismo nodo.</p>
+            <h3>Tipos de Grafos</h3>
+            <p><b>Grafo no dirigido:</b></p>
+            <p>Los grafos no dirigidos son aquellos que constan un conjunto de vértices que están conectados a un conjunto de aristas de forma no direccional.Esto significa que una arista puede indistintamente recorrerse desde cualquiera de sus puntos y en cualquier dirección.<p>
+            <p><b>Grafo no etiquetados:</b></p>
+            <p>Esta clasificación es denominada como grafos etiquetados o grafos dirigidos con pesos. Este tipo de grafos concentran aristas que pueden poseer información adicional donde podemos reflejar nombres, costos, valores u otros datos. Estos grafos también son denominados como redes de actividad y el número asociado al arco, se le denomina factor de peso. Este grafo es el que más comúnmente utilizamos para representar situaciones de la vida real.<p>
+                <center><img src="./img/grafo.png"style="width: 400px; height: auto;"></center>
+            <center> <ul class= "xd"><li class="xs"><a href="https://www.grapheverywhere.com/que-son-los-grafos/"  target="_blank">OBTENER MÁS INFORMACIÓN</a></li></ul>
+            </center>
+        </div>
+
+        <div class="texto">
+        	<img src="./img/imgf.jpg"style="width: 400px; height: auto;">
+            <h2>Importancia de los grafos</h2>
+            <p>Los grafos son importantes porque son una representación natural de redes y que permiten expresar de forma visualmente sencilla las relaciones que se dan entre los elementos de x estudio, es decir facilitan la resolución de problemas de una manera práctica, confiable y que permite obtener resultados confiables que son de mucha ayuda a la hora de tomar decisiones en la solución de y problema. Los grafos a parte de facilitar la resolución de problemas nos permiten prevenir y dar solución a problemas futuros de una manera exacta.</p>
+           <p><b>¿Como se representa?</b></p>
+            <p>Hay tres maneras de representar un grafo en un programa: mediante matrices, mediante listas y mediante matrices dispersas.
+           <p><b> Representación mediante matrices:</b></p>
+            <p>La forma más fácil de guardar la información de los nodos es mediante la utilización de un vector que indexe los nodos, de manera que los arcos entre los nodos se pueden ver como relaciones entre los índices. Esta relación entre índices se puede guardar en una matriz, que llamaremos de adyacencia.<p>
+            <p><b>Representación mediante listas:</b></p>
+             <p>En las listas de adyacencia lo que haremos será guardar por cada nodo, además de la información que pueda contener el propio nodo, una lista dinámica con los nodos a los que se puede acceder desde él. La información de los nodos se puede guardar en un vector, al igual que antes, o en otra lista dinámica.<p>
+            <p><b>Representación mediante matrices dispersas:</b></p>
+            <p> Para evitar uno de los problemas que teníamos con las listas de adyacencia, que era la dificultad de obtener las relaciones inversas, podemos utilizar las matrices dispersas, que contienen tanta información como las matrices de adyacencia, pero, en principio, no ocupan tanta memoria como las matrices, ya que al igual que en las listas de adyacencia, sólo representaremos aquellos enlaces que existen en el grafo.<p>
+            <p><b>Dígrafo (grafo dirigido).</b></p>
+            <p>A un grafo dirigido se le puede definir como un grafo que contiene aristas dirigidas, como en el siguiente caso.<p>
+            </p>
+            <center> <ul class= "xd"><li class="xs"><a href="https://gabeezko.wixsite.com/mate-discretas/62--representacin-de-los-grafos" target="_blank">OBTENER MÁS INFORMACIÓN</a></li></ul>
+            </center>
+             </div>        
+</section>
+
+    <footer>
+        <p>&copy; 2025 proyecto  KKAAA| Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

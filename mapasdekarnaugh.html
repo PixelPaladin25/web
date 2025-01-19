@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mapas de Karnaugh</title>
+	<style type="text/css">
+		
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color:   #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color:      #d80003    ;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+         a {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+            border-radius: 0 0 8px 8px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        a:hover {
+            background-color: #e0e0e0;
+        }
+
+
+
+
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .texto {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+        }
+        .texto img{
+
+        	width: 100%;
+
+
+
+
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+        .xd {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+
+    </style>
+    <style>
+        .xs {
+            width: 29%;
+            margin: 1.5%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .xs:hover {
+            transform: scale(1.05);}
+
+
+	</style>
+</head>
+<body>
+	
+	 <header>
+        <h1>Mapas de Karnaugh</h1>
+    </header>
+
+    <section>
+        <div class="texto">
+            <h2>Definición</h2>
+            <p>Los mapas de Karnaugh son una herramienta utilizada para la simplificación de funciones lógicas booleanas y a diferencia de la resolución por algebra de Boole,  este es un método gráfico que implica conocer las representaciones canónicas  de las funciones.
+                <p>El Mapa de Karnaugh tiene la característica de que puede ser visto como una representación bidimensional de una tabla de verdad. En la tabla de verdad, se colocan las variables por columnas y las combinaciones de tales variables determinan un valor de salida, 0 o 1, sin embargo, en el mapa las variables se colocan como si de un plano cartesiano se tratara, respetando cada una de las combinaciones que de ellas se generan, y colocando en la intersección de las combinaciones de las variables, el valor de salida. Una de las ventajas de estos elementos gráficos, es que evitan la realización de cálculos algebraicos, y al determinar la función de salida, esta se encuentre minimizada.
+                <p>Los mapas muestran la relación que existe entre  las entradas y las salidas de un circuito lógico, si se aplica adecuadamente el resultado será el más simplificado posible. Pueden ser utilizados para cualquier número de variables de entrada sin embargo se recomienda un máximo de seis variables. 
+                En la figura 1, vemos dos ejemplos de  la representación de los mapas de Karnaugh, como ya se mencionó, se pueden utilizar más variables, pero en este caso nos enfocaremos en mapas con 3 y 4 variables.
+                 <center><img src="./img/map1.jpg"> </center>
+                <p> Fig. 1.- Representación base de los mapas de Karnaugh, del lado izquierdo se tiene un mapa de tres variables, y del lado derecho se tiene un mapa de 4 variables. En los mapas se puede ver la forma de ordenar las variables y los valores lógicos que puede tener cada variable o combinación de variables.
+                Como ya se mencionó, el mapa de Karnaugh es una representación en dos dimensiones de una tabla de verdad, en la figura 2 podemos ver la forma en la que una tabla de verdad es representada por un mapa.
+                   <center><img src="./img/map2.jpg"> </center>
+                   <p> En la figura 2 se puede ver la forma de pasar una tabla de verdad a un mapa de Karnaugh, vemos que la tabla tiene 4 variables colocadas de la A a la D, ordenadas en columnas. Estas 4 variables forman diferentes combinaciones (2^4) y cada combinación tiene una salida lógica {0, 1}, por ejemplo la combinación en la tabla de verdad encerrada en amarillo puede ser representada como ABCD, esta es la representación canónica, es decir es una combinación involucra a todas las variables y que tiene como salida, en este caso,  un 1. Hay que hacer notar que cuando el valor de la variable es 1, solo se representa con el nombre de la variable, sin embargo, cuando el valor de la variable es 0, se representa con la variable negada.
+
+</p>
+            <center> <ul class= "xd"><li class="xs"><a href="https://virtual.cuautitlan.unam.mx/intar/sistdig/mapas-de-karnaugh/"  target="_blank">OBTENER MÁS INFORMACIÓN</a></li></ul>
+            </center>
+        </div>
+
+        <div class="texto">
+            <h2>Reglas de Simplificación</h2>
+            <h3>Uno:</h3>
+            <p>Las agrupaciones son exclusivamente de unos. Esto implica que ningún grupo puede contener ningún cero</p>
+             <center><img src="./img/sm.png"style="width: 300px; height: auto;"></center>
+             <h3>Dos:</h3>
+             <p>Las agrupaciones únicamente pueden hacerse en horizontal y vertical. Esto implica que las diagonales están prohibidas.</p>
+              <center><img src="./img/sm1.png"style="width: 300px; height: auto;"></center>
+              <h3>Tres:</h3>
+              <p>Los grupos han de contener 2n elementos. Es decir que cada grupo tendrá 1, 2, 4,8... Número de unos.</p>
+              <center><img src="./img/sm3.png"style="width: 300px; height: auto;"></center>
+              <h3>Cuatro:</h3>
+              <p>Cada grupo ha de ser tan grande como seavposible. Tal y como lo ilustramos en el ejemplo..</p>
+              <center><img src="./img/sm4.png"style="width: 300px; height: auto;"></center>
+              <h3>Quinta:</h3>
+              <p>Todos los unos tienen que pertenecer como mínimo a un grupo. Aunque pueden pertenecer a más de uno.</p>
+              <center><img src="./img/sm5.png"style="width: 300px; height: auto;"></center>
+              <h3>Sexta:</h3>
+              <p>Pueden existir solapamiento de grupos.</p>
+              <center><img src="./img/sm6.png"style="width: 300px; height: auto;"></center>
+              <h3>Séptima: </h3>
+              <p>La formación de grupos también se puede producir con las celdas extremas de la tabla. De tal forma que la parte inferior se podría agrupar con la superior y la izquierda con la derecha tal y como se explica en el ejemplo..</p>
+              <center><img src="./img/sm7.png"style="width: 300px; height: auto;"></center>
+
+            <center> <ul class= "xd"><li class="xs"><a href="https://campusvirtual2.ug.edu.ec/pluginfile.php/563148/mod_resource/content/5/S16%20S17%20S18.pdf">OBTENER MÁS INFORMACIÓN</a></li></ul>
+            </center>
+             </div>
+        </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 proyecto  KKAAA | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
